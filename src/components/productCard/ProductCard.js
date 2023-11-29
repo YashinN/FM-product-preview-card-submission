@@ -1,6 +1,7 @@
 import styles from "./ProductCard.module.scss";
 import productImageDesktop from "../../images/image-product-desktop.jpg";
 import productImageMobile from "../../images/image-product-mobile.jpg";
+import cartIcon from "../../images/icon-cart.svg";
 
 const ProductCard = () => {
   return (
@@ -33,7 +34,10 @@ const ProductCard = () => {
           </span>
         </div>
 
-        <button>Add to Cart</button>
+        <button className={styles.cartBtn}>
+          <img src={cartIcon} alt="cart trolley" />
+          Add to Cart
+        </button>
       </article>
     </section>
   );

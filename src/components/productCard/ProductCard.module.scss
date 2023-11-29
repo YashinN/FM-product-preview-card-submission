@@ -43,6 +43,30 @@
       margin-bottom: 2.9rem;
       font-weight: 500;
     }
+
+    .cartBtn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1.2rem;
+      height: 4.8rem;
+      width: 100%;
+      border: none;
+      color: $bg-pure-white;
+      background-color: $bg-deep-aquaMarine;
+      border-radius: 0.8rem;
+      cursor: pointer;
+      transition: all 0.3s ease;
+
+      &:hover {
+        background-color: $bg-hover;
+        transform: translateY(-3px);
+      }
+
+      &:active {
+        transform: translateY(1px);
+      }
+    }
   }
 }
 
