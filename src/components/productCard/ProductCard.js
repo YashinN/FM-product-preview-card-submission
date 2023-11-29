@@ -7,7 +7,7 @@ const ProductCard = () => {
   return (
     <section className={styles.productCard}>
       <picture>
-        <source srcset={productImageMobile} media="(max-width: 600px)" />
+        <source srcSet={productImageMobile} media="(max-width: 600px)" />
         <img
           src={productImageDesktop}
           className={styles.productCard__image}
