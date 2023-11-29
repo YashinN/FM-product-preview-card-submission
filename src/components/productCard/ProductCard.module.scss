@@ -6,6 +6,8 @@
   border-radius: 1rem;
   overflow: hidden;
   font-family: "Montserrat", sans-serif;
+  background-color: #fff;
+  transition: all 5s linear;
 
   &__image {
     width: 100%;
@@ -14,7 +16,7 @@
 
   &__productContent {
     background-color: $bg-pure-white;
-    padding: 3.2rem;
+    padding: clamp(2.4rem, 5vw, 3.2rem);
     display: flex;
     flex-direction: column;
     max-width: 50%;
@@ -71,7 +73,7 @@
 }
 
 .pricingContainer {
-  margin-bottom: 3rem;
+  margin-bottom: clamp(2rem, 5vw, 3rem);
   display: flex;
   align-items: center;
   gap: 2rem;
@@ -89,6 +91,28 @@
       color: $text-paragraph;
       font-size: 1.3rem;
       text-decoration: line-through;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .productCard {
+    flex-direction: column;
+
+    .productName {
+      margin-bottom: 1.2rem;
+    }
+
+    .productTitle {
+      margin-bottom: 1.6rem;
+    }
+
+    .productDescription {
+      margin-bottom: 2.4rem;
+    }
+
+    &__productContent {
+      max-width: 100%;
     }
   }
 }

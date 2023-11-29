@@ -7,8 +7,13 @@ const ProductCard = () => {
   return (
     <section className={styles.productCard}>
       <div className={styles.productCard__imgContainer}>
-        <img
+        {/* <img
           src={productImageDesktop}
+          className={styles.productCard__image}
+          alt="Perfume"
+        /> */}
+        <img
+          src={productImageMobile}
           className={styles.productCard__image}
           alt="Perfume"
         />
