@@ -6,18 +6,14 @@ import cartIcon from "../../images/icon-cart.svg";
 const ProductCard = () => {
   return (
     <section className={styles.productCard}>
-      <div className={styles.productCard__imgContainer}>
-        {/* <img
+      <picture>
+        <source srcset={productImageMobile} media="(max-width: 600px)" />
+        <img
           src={productImageDesktop}
           className={styles.productCard__image}
           alt="Perfume"
-        /> */}
-        <img
-          src={productImageMobile}
-          className={styles.productCard__image}
-          alt="Perfume"
         />
-      </div>
+      </picture>
 
       <article className={styles.productCard__productContent}>
         <span className={styles.productName}>perfume</span>
